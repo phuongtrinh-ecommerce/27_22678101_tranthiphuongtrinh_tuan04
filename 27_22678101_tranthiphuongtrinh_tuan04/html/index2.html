@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            width: 960px;
+        }
+        
+        .h1 {
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 1px 5px 10px black;
+        }
+        
+        .bai-1 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai-1 h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border: thin #000099 dashed;
+        }
+        
+        .bai-1 h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 9px;
+            font-style: italic;
+            color: #CC0000;
+            text-decoration: blink;
+        }
+        
+        .bai-1 h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: bold;
+            color: #FF3399;
+        }
+        
+        .bai-1 h4 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            font-style: italic;
+            color: #FFFF00;
+        }
+        
+        .bai-1 h5 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            font-style: italic;
+            color: #009999;
+        }
+        
+        .bai-1 h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9px;
+            font-style: normal;
+            font-weight: lighter;
+            color: #009900;
+        }
+        
+        .bai-2a {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai-2b {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai-3 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai-4 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai-4 table,
+        tr,
+        td,
+        th {
+            border: 1px solid #993738;
+            border-collapse: collapse;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        
+        .bai-4 th,
+        td {
+            padding: 2px;
+        }
+        
+        .bai-4 th:last-child,
+        td:last-child {
+            text-align: right;
+        }
+        
+        .bai-4 tr:nth-child(even) {
+            background-color: silver;
+        }
+        
+        .bai-5 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai-5 {
+            background-image: url(../images/logo.png), url(../images/flower\ .png);
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, repeat;
+        }
+        
+        .bai-6 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+            background-color: #000099;
+        }
+        
+        .bai-7 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai-7 p {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
+            -webkit-column-rule-style: solid;
+            -moz-column-rule-style: solid;
+            column-rule-style: solid;
+            -webkit-column-rule-width: 1px;
+            -moz-column-rule-width: 1px;
+            column-rule-width: 1px;
+            -webkit-column-rule-color: lightblue;
+            -moz-column-rule-color: lightblue;
+            column-rule-color: lightblue;
+        }
+        
+        .bai-8 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai8a,
+        .bai8b,
+        .bai8c,
+        .bai8d {
+            border-color: #85c226 #F7C200 #4493AD #DF127B;
+            border-style: solid;
+            border-width: 10px;
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+        
+        .bai8b {
+            border-style: solid dotted groove double;
+        }
+        
+        .bai8c {
+            border-width: 8px 10px 15px 20px;
+        }
+        
+        .bai8d {
+            border-radius: 0px 30px 70px 20px;
+        }
+        
+        .bai8e {
+            border-width: 4px 30px 4px 30px;
+            border-style: groove ridge dashed groove;
+            border-color: rgb(51, 166, 5);
+            border-radius: 100px 100px 0 0;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            margin: auto;
+        }
+        
+        .bai8f {
+            border-radius: 20px;
+            border-style: solid;
+            border-color: rgb(182, 182, 31);
+            border-width: 5px;
+            width: 180px;
+            text-align: center;
+            background-color: white;
+            margin: auto;
+        }
+        
+        .bai8g {
+            border-width: 0px 12px 0px 12px;
+            border-style: double;
+            border-color: violet;
+            border-radius: 40px 40px 60px 60px;
+            width: 200px;
+            text-align: center;
+            background-color: white;
+            margin: auto;
+        }
+        
+        .bai8h {
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(16, 123, 172);
+            border-radius: 20px 100px 100px 20px;
+            width: 180px;
+            height: 85px;
+            text-align: center;
+            background-color: white;
+            margin: auto;
+        }
+        
+        .bai8i {
+            background: green;
+            border-width: 4px 30px 4px 30px;
+            border-style: solid;
+            border-color: #56c6d9#56c6d9#fe2192#fe2192;
+            border-radius: 0 120px 0 120px;
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .bai-9 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .tdbai9 {
+            width: 250px;
+            border: 1px solid red;
+            height: 100px;
+        }
+        
+        .bai-9 .image {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin-left: 0px;
+        }
+        
+        .bai-9 .container {
+            position: relative;
+            width: 50%;
+        }
+        
+        .overlay {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            background-color: #008CBA;
+        }
+        
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        
+        .text {
+            width: 220px;
+            height: 100px;
+            text-align: center;
+            border: 1px solid red;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translate(-76%, -50%);
+            text-align: center;
+        }
+        
+        .bai-11 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .bai-11 footer {
+            position: fixed;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            background-color: green;
+            color: #fff;
+        }
+        
+        .bai-12 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+            position: relative;
+        }
+        
+        .bai-12 .p1 {
+            border: 1px solid red;
+            background-color: rgb(118, 1, 1);
+            transform: rotate(-45deg) skew(-45deg);
+            width: 120px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: -40px;
+        }
+        
+        .bai-12 .p2 {
+            text-shadow: 0 0 3px #000000, 3px 0 3px #000000, 0 3px 3px #000000, -3px 0 3px #000000, 0 -3px 3px #000000;
+            font-size: 45px;
+            text-align: center;
+        }
+        
+        .bai-14 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+            position: relative;
+        }
+        
+        .bai-14 .transition {
+            width: 300px;
+            height: 170px;
+            background: #6FAC21;
+            opacity: 0.8;
+            border-radius: 10px;
+            transition: all 2s linear;
+            margin: 50px 50px;
+            text-align: justify;
+            border-bottom: dashed;
+            border-left: double;
+            border-right: dashed;
+            border-top: double;
+            border-color: red;
+        }
+        
+        .bai-14 .transition {
+            color: white;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 16px;
+            transition: all 2s;
+        }
+        
+        .bai-14 .transition:hover {
+            transform: scale(2) rotate(360deg);
+            -webkit-transform: scale(2) rotate(360deg);
+            -mos-tranform: scale(2) rotate(360deg);
+            -o-transform: scale(2) rotate(360deg);
+            -ms-transform: scale(2) rotate(360deg);
+            background: #1EC7E6;
+            opacity: 0.8;
+        }
+        
+        .bai-15 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+            position: relative;
+        }
+        
+        .bai-15 input[type=text] {
+            width: 100px;
+            -webkit-transform: width .35s ease-in-out;
+            transform: width .35s ease-in-out;
+        }
+        
+        .bai-15 input[type=text]:focus {
+            width: 250px;
+            background-color: lightgreen;
+        }
+        
+        .bai-16 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .stitched {
+            width: 50px;
+            padding: 10px;
+            margin: 5px auto;
+            background: #0d90df;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.3em;
+            border: 2px dashed #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 0 4px #0d90df, 2px 1px 6px 4px rgb(10, 10, 0.5);
+            text-shadow: -1px -1px#aa3030;
+            font-weight: normal;
+            text-align: center;
+        }
+        
+        .bai-16 a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .bai-17 {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        
+        .bai-17 nav {
+            width: 70%;
+        }
+        
+        .bai-17 ul {
+            background-color: #aa3030;
+            display: flex;
+            padding: 10px;
+        }
+        
+        .bai-17 li {
+            list-style: none;
+        }
+        
+        .bai-17 a {
+            color: white;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        
+        .bai-18 {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        
+        .bai-18 nav {
+            padding: 15px;
+            position: relative;
+            display: block;
+            top: 0px;
+            width: 90%;
+            background-color: green;
+        }
+        
+        .bai-18 li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 20px;
+            font-size: 25px;
+        }
+        
+        .bai-18 a {
+            color: white;
+        }
+        
+        .bai-18 a:link {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .bai-18 a:hover {
+            color: orange;
+            text-decoration: none;
+        }
+        
+        .bai-18 li>ul {
+            display: none;
+        }
+        
+        .bai-18 li:hover ul {
+            display: block;
+            position: absolute;
+            left: 200px;
+            background-color: green;
+            margin: 0px;
+        }
+        
+        .bai-18 li:hover ul li a:link {
+            display: block;
+            margin-left: 20px;
+        }
+        
+        .bai-19 {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        
+        .bai-19 nav {
+            background-color: white;
+            position: relative;
+            display: block;
+            margin: 10px;
+        }
+        
+        .bai-19>nav>ul {
+            display: flex;
+            background-color: #aa3030;
+        }
+        
+        .bai-19>nav>ul>li {
+            background-color: black;
+            padding: 20px 5px 20px 5px;
+            list-style: none;
+            width: 20%;
+            border: 1px solid #fff;
+            border-top: none;
+            border-bottom: none;
+        }
+        
+        .bai-19>nav>ul>li>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .bai-19 li>ul {
+            display: none;
+        }
+        
+        .bai-19>nav>ul>li:hover {
+            background-color: greenyellow;
+        }
+        
+        .bai-19 li:hover ul {
+            display: block;
+            position: absolute;
+            left: 372px;
+            top: 50px;
+        }
+        
+        .bai-19 li:hover li {
+            background-color: silver;
+            list-style: none;
+            padding: 10px;
+            margin: 0px;
+        }
+        
+        .bai-19 li:hover li:hover {
+            background-color: green;
+        }
+        
+        .bai-19 li:hover a {
+            text-decoration: none;
+            color: black
+        }
+        
+        .bai-19 li:hover a:hover {
+            color: white;
+        }
+        
+        .bai-20 {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        
+        .bai-20 li>ul {
+            display: none;
+        }
+        
+        .bai-20 li:hover ul {
+            display: block;
+            position: absolute;
+            left: 800px;
+        }
+        
+        .bai-20 a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Bài 1-->
+        <div class="bai-1">
+            <p class="h1">Bài 1</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+
+        <!--Bài 2-->
+        <div class="bai-2a">
+            <p class="h1">Bài 2a</p>
+            <div id="container" style="width:500px; height: 300px; background-color: gray;">
+                <h1>A simple div element</h1>
+            </div>
+            <p style="text-indent: 1cm; color: red; text-align: justify;">
+                Thiết lập chế độ độ thụt đầu dòng cho 1 đoạn văn bản, Thuộc tính này có thể gán giá trị là tỉ lệ % hoặc một số cụ thể. Thiết lập chế độ độ thụt đầu dòng cho 1 đoạn văn bản. Thộc tính này có thể gán giá trị là tỉ lệ % hoặc một số cụ thể.
+            </p>
+            <p style="text-align: right; color: blue;">
+                Thuộc tính text-align: right; dùng để canh lên phải đoạn văn bản.
+            </p>
+            <p style="text-align: center; color: green;">
+                Thuộc tính text-align: center; dùng để canh lên giữa đoạn văn bản.
+            </p>
+            <p style="text-align: left; color: brown;">
+                Thuộc tính text-align: left; dùng để canh lên trái đoạn văn bản.
+            </p>
+            <p style="text-decoration: underline; color:pink">
+                Thuộc tính text-decoration: underline; sẽ gạch dưới đoạn văn bản.
+            </p>
+            <p style="text-decoration: line-through; color: purple;">
+                Thuộc tính text-decoration; sẽ gạch ngang đoạn văn bản.
+            </p>
+            <p style="text-decoration: overline; color: red;">
+                Thuộc tính text-decoration: overline, sẽ gạch trên đoạn văn bản.
+            </p>
+            <p style="text-decoration: blink; text-align: center; color: blue; text-shadow: 4px 4px 8px blue;">
+                Thuộc tính text-decoraion: blink; sẽ tạo hiệu ứng blink cho đoạn văn bản + thuộc tính text-shadow: 4px 4px 8px blue; tạo bóng cho chữ.
+            </p>
+        </div>
+        <div class="bai-2b">
+            <p class="h1">Bài 2b</p>
+            <div style="border: 1px solid purple">
+                <span style="text-shadow: 0px 2px 1px green; margin-right: 20px; font-weight: 700; margin-left: 20px;">Colorful Style</span>
+                <span style="background-color: rgb(224, 129, 227); font-weight: 1000; padding: 3px; color: rebeccapurple; margin-right: 30px;">Inset Effect</span>
+                <span style="text-shadow: 0px -6px 1px palevioletred; font-weight: 800;">Double Font</span>
+                <br>
+                <span>Glossy Style</span>
+                <span>Oange Style</span>
+                <span>Neon Glow</span>
+            </div>
+        </div>
+
+        <!--Bài 3-->
+        <div class="bai-3">
+            <p class="h1">Bài 3</p>
+            <table>
+                <colgroup>
+                    <col span="2" style="background-color: blue;">
+                    <col style="background-color: green;">
+                    <col span="2" style="background-color: pink;">
+                </colgroup>
+                <tr style="background-color: silver;">
+                    <th>Transaction date</th>
+                    <th>Payment type and details</th>
+                    <th>Paid out</th>
+                    <th>Paid in</th>
+                    <th>Balance</th>
+                </tr>
+                <tr>
+                    <td>12 Jun 09</td>
+                    <td>Amazon.com</td>
+                    <td>$49.99</td>
+                    <td></td>
+                    <td>$8411.16</td>
+                </tr>
+                <tr>
+                    <td>13 Jun 09</td>
+                    <td>Total</td>
+                    <td>$60.00</td>
+                    <td></td>
+                    <td>8351.16</td>
+                </tr>
+                <tr>
+                    <td>14 Jun 09</td>
+                    <td>Whole Foods</td>
+                    <td>$75.28</td>
+                    <td></td>
+                    <td>$8351.16</td>
+                </tr>
+                <tr>
+                    <td>14 Jun 09</td>
+                    <td>Visa Payment</td>
+                    <td>$350.00</td>
+                    <td></td>
+                    <td>$7925.88</td>
+                </tr>
+                <tr>
+                    <td>15 Jun 09</td>
+                    <td>Cheque 122501</td>
+                    <td></td>
+                    <td>$1450.00</td>
+                    <td>$9375.88</td>
+                </tr>
+                <tr>
+                    <td>17 Jun 09</td>
+                    <td>Murco</td>
+                    <td>$60.00</td>
+                    <td></td>
+                    <td>$9315.88</td>
+                </tr>
+                <tr>
+                    <td>18 Jun 09</td>
+                    <td>Wrocx press</td>
+                    <td></td>
+                    <td>$1000.00</td>
+                    <td>$10315.88</td>
+                </tr>
+                <tr>
+                    <td>18 Jun 09</td>
+                    <td>MeLellans Bakery</td>
+                    <td>$25.00</td>
+                    <td></td>
+                    <td>$10290.88</td>
+                </tr>
+                <tr>
+                    <td>18 Jun 09</td>
+                    <td>Apple Store</td>
+                    <td>$1350.00</td>
+                    <td></td>
+                    <td>$8940.88</td>
+                </tr>
+                <tr style="background-color: silver;">
+                    <td></td>
+                    <td></td>
+                    <td>$1970.27</td>
+                    <td>$2450.00</td>
+                    <td>$8940.88</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Bài 4-->
+        <div class="bai-4">
+            <p class="h1">Bài 4</p>
+            <h1>Exercise example</h1>
+            <table>
+                <tr style="color: white; background-color: brown;">
+                    <th style="width: 200px;">Region</th>
+                    <th style="width: 100px;">Percentage</th>
+                </tr>
+                <tr>
+                    <td>New England</td>
+                    <td>12%</td>
+                </tr>
+                <tr>
+                    <td>Mid-Atlantic</td>
+                    <td>19%</td>
+                </tr>
+                <tr>
+                    <td>South and Puerto Rico</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>Midwest and Plains States</td>
+                    <td>12%</td>
+                </tr>
+                <tr>
+                    <td>Southwest and Moutain</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>West, Alaska, and Hawaii</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Abroad</td>
+                    <td>13%</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Bài 5-->
+        <div class="bai-5">
+            <p class="h1">Bài 5</p>
+            <p>
+                Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the
+                language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although
+                most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language
+                used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of
+                XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style
+                of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and
+                formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML,
+                SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written
+                in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a
+                markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets
+                (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language
+                can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often
+                used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used
+                for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML
+                document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web
+                pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting
+                of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and
+                XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in
+                HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup
+                language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is
+                a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be
+                applied to any kind of XML document, including plain XML, SVG and XUL Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used
+                to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL
+            </p>
+        </div>
+
+        <!--Bài 6-->
+        <div class="bai-6">
+            <p class="h1">Bài 6</p>
+            <div class="row">
+                <div class="col1">
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in
+                        HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL
+                    </p>
+                </div>
+                <div class="col2">
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in
+                        HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL
+                    </p>
+                </div>
+                <div class="col3">
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in
+                        HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <p>Along with HTML and JavaScript, CSS is a cornetstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications</p>
+                </div>
+                <div class="col2">
+                    <p>Along with HTML and JavaScript, CSS is a cornetstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications</p>
+                </div>
+                <div class="col3">
+                    <p>Along with HTML and JavaScript, CSS is a cornetstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Bài 7-->
+        <div class="bai-7">
+            <p class="h1">Bài 7</p>
+            <h1 class="header">
+                MH17 crash: Russia vetoes UN resolution for international tribunal
+            </h1>
+            <p>
+                Russia has used its veto at the UN to blick a draft resolution to set up an international tribunal into the MH17 air diaster in July 2014. It was the only nation at the 15-member UN Security Council to oppose the move, triggering widespread condemnation.
+                <br>
+                <br> The Malaysian Airlines flight from Amsterdam to Kuala Lumpur crashed in eastern Ukraine, killing all 298 people on board. Pro-Rusian rebels in the area have denied shooting down the aricraft. Western nations and Ukraine say thể is
+                evidence it was hit by a Russian-supplied Buk anti-arircraft missile - a claim also denied by Russia. 'Callous disregard'
+                <br>
+                <br> Malaysia pushed for an international tribunal to try those reponsible. The move was backed by the Netherlands - which had 196 nationals on board - Ukraine, Belgium and Australia. Moscow has blamed the government in Kiev for the disaster.
+                Elenven of the 15 UN Security Council members backed the draft resoulution Speaking earlier this month, Russian President Vladimir Putin said that the establishment of a tribunal would be "premature" and "counter-productive".
+            </p>
+        </div>
+
+        <!--Bài 8-->
+        <div class="bai-8">
+            <p class="h1">Bài 8</p>
+            <div class="bai8a">
+
+                <p>
+                    Here the top border is green(#85C226) in color,
+                </p>
+
+                <p>
+                    Right border is yellow(#F7C200)
+                </p>
+
+                <p>
+                    The bottom has blue(#4493A0)
+                </p>
+
+                <p>
+                    And Left border is pink(#DF127B) in color
+                </p>
+            </div>
+            <br><br><br>
+            <div class="bai8b">
+                <p>
+                    Here the top border (green) has a solid style,
+                </p>
+
+                <p>
+                    Right (yellow) one has dotted,
+                </p>
+
+                <p>
+                    Bottom has (blue) one has groove and
+                </p>
+
+                <p>
+                    The left (pink) one has the double style.
+                </p>
+            </div>
+            <br><br><br>
+            <div class="bai8c">
+                <p>
+                    Here top (green) border's width is 5 pixel,
+                </p>
+
+                <p>
+                    Right (yellow) border is 10pixel wide,
+                </p>
+
+                <p>
+                    Bottom (blue) is 15 pixel
+                </p>
+
+                <p>
+                    And left (pink) is 20 pixel wide
+                </p>
+            </div><br><br><br>
+            <div class="bai8d">
+                <p>
+                    No Border radius( 0px ) has been applied on the top-left (green-pink) corner
+                </p>
+
+                <p>
+                    Border radius( 30px ) has been applied on the top-right (green-yellow) corner
+                </p>
+
+                <p>
+                    Border radius( 70px ) has been applied on the bottom-right (blue-yellow) corner
+                </p>
+
+                <p>
+                    Border radius( 20px ) has been applied on the bottom-left (blue-pink) corner
+                </p>
+            </div><br><br><br>
+            <div class="bai8e">
+                <p>Adv-Hemisphere</p>
+            </div><br><br><br>
+            <div class="bai8f">
+                <p>Round</p>
+                <p>Rectangle</p>
+            </div><br><br><br>
+            <div class="bai8g"><br>
+                <b><p>Advanced Round</p>
+                    <p>Rectangle</p></b><br>
+            </div><br><br><br>
+            <div class="bai8h">
+                <br>
+                <p><b>Bullet</b></p>
+
+            </div><br><br><br>
+            <div class="bai8i">
+                <br> Advanced Leaf
+            </div>
+            <div class="bai8j">
+                <style>
+                    .button8j {
+                        width: 220px;
+                        padding: 20px;
+                        background-color: #428bca;
+                        border-color: #357ebd;
+                        color: #ffffff;
+                        border-radius: 10px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border: 1px solid transparent;
+                        font-weight: 900;
+                        font-size: 125%;
+                        margin: 5% 38.5%;
+                    }
+                </style>
+                <button class="button8j">
+                    Subscribe Now
+                </button>
+            </div>
+        </div>
+
+        <!--Bài 9-->
+        <div class="bai-9">
+            <p class="h1">Bài 9</p>
+            <table>
+                <tr class="trbai9">
+                    <td class="tdbai9">
+                        <div class="container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Facebook_logo_%28June_30%2C_2015%29.png" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="tdbai9">
+                        <div class="container">
+                            <img src="https://cdn.tgdd.vn/Files/2017/11/04/1038377/1987_800x350.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="tdbai9">
+                        <div class="container">
+                            <img src="https://nextjump.com/wp-content/uploads/2022/03/NxJ_Black.png" style="background-color: white;" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="tdbai9">
+                        <div class="container">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="trbai9">
+                    <td class="tdbai9">
+                        <div class="container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Palantir_Technologies_logo.svg/2560px-Palantir_Technologies_logo.svg.png" style="background-color: white;" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="tdbai9">
+                        <div class="container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Quora_logo.svg/2560px-Quora_logo.svg.png" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="tdbai9">
+                        <div class="container">
+                            <img src="https://upload.wikimedia.org/wikipedia/fr/1/1d/TripAdvisor-logo.png" style="background-color: white;" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <!--Bài 11-->
+        <div class="bai-11">
+            <footer>
+                <p class="h1">Bài 11</p>
+                <p>I will be stuck here.</p>
+            </footer>
+        </div>
+
+        <!--Bài 12-->
+        <div class="bai-12">
+            <p class="h1">Bài 12</p>
+            <p class="p1">
+                Best seller 2015
+            </p>
+            <p class="p2">
+                Cascading Style Sheets Book
+            </p>
+            <p>
+                Cascading Style Sheets (CSS) is a style sheet language used for describing the look and forrmatting of a document written in a markup language.
+            </p>
+        </div>
+
+        <!--Bài 13-->
+        <div class="bai-13">
+            <p class="h1">Bài 13</p>
+            <div class="transition">
+
+            </div>
+        </div>
+
+        <!--Bài 14-->
+        <div class="bai-14">
+            <p class="h1">Bài 14</p>
+            <div class="transition">
+                <p>Cascading Style Sheets(CSS) is a style sheet language used for decribing the look and formatting of a document written in a markup language.</p>
+            </div>
+        </div>
+
+        <!--Bài 15-->
+        <div class="bai-15">
+            <p class="h1">Bài 15</p>
+            Search: <input type="text" name="Search" id="">
+        </div>
+
+        <!--Bài 16-->
+        <div class="bai-16">
+            <p class="h1">Bài 16</p>
+            <ul>
+                <li class="stitched"><a href="">Home</a></li>
+                <li class="stitched"><a href="">Services</a></li>
+                <li class="stitched"><a href="">Products</a></li>
+                <li class="stitched"><a href="">Contacts</a></li>
+            </ul>
+        </div>
+
+        <!--Bài 17-->
+        <div class="bai-17">
+            <p class="h1">Bài 17</p>
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">ARTICLES</a></li>
+                    <li><a href="">FROM</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Bài 18-->
+        <div class="bai-18">
+            <p class="h1">Bài 18</p>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a>
+                        <ul>
+                            <li><a href="">Engineering</a></li>
+                            <li><a href="">Telecom</a></li>
+                            <li><a href="">Enery</a></li>
+                            <li><a href="">Finance</a></li>
+                            <li><a href="">Consultancy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Bài 19-->
+        <div class="bai-19">
+            <p class="h1">Bài 19</p>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Introdution>></a></li>
+                    <li><a href="">Portfolio>></a>
+                        <ul>
+                            <li><a href="">Photograpy</a></li>
+                            <li><a href="">Web & User Iterface Design</a></li>
+                            <li><a href="">Illusstration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Bài 20-->
+        <div class="bai-20">
+            <p class="h1">Bài 20</p>
+            <ul>
+                <li class="stitched"><a href="">Home</a></li>
+                <li class="stitched"><a href="">Services</a></li>
+                <li class="stitched"><a href="">Products</a>
+                    <ul>
+                        <li class="stitched">
+                            <a href="">Photography</a>
+                        </li>
+                        <li class="stitched">
+                            <a href="">Web & User <br> Interface <br> Design</a>
+                        </li>
+                        <li class="stitched">
+                            <a href="">Illusstration</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="stitched"><a href="">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
